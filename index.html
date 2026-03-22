@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="page-shell">
+        <p id="time" class="fade-in"></p>
+        <main id="container" class="card fade-in delay-1">
+            <div class="card-glow"></div>
+            <p class="eyebrow">Health tracker</p>
+            <h1>BMI Calculator</h1>
+            <p class="subtitle">Check your body mass index with a clean, fast calculator.</p>
+            <form id="bmiForm">
+                <label for="height">Height</label>
+                <input id="height" type="number" step="any" placeholder="Enter height in meters">
+                <label for="weight">Weight</label>
+                <input id="weight" type="number" step="any" placeholder="Enter weight in kilograms">
+                <button id="submit" type="submit">Calculate BMI</button>
+            </form>
+            <p id="Result" aria-live="polite"></p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
